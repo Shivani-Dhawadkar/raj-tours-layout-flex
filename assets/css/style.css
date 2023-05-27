@@ -24,6 +24,13 @@ body{
 .content-area {
 	color: var(--color-dark);
 }
+.content-nav-logo{
+	display: flex;
+	flex-direction: column;
+}
+.content-nav-logo .navbar-brand{ 
+	font-size: 12px;
+}
 
 .content-area .main-content-area .content-discription {
 	display: flex;
@@ -163,23 +170,44 @@ body{
 	margin-top: 40px;
 	height: 235px;
 }
+/* .container{
+	position: relative;
+}
+
+.Testimonials{
+	position: absolute;
+	/* transform: scale(0.4); */
+/* } */ 
+.img-set{
+	/* display: flex; */
+	justify-content: flex-start;
+	align-content: flex-start;
+	padding-left: 10px;
+}
+.Testimonials{
+/* transform: scaleX(0.3); */
+/* float: left; */
+}
 .Testimonials h2{
 	font-family: 'Manrope', sans-serif;
 	size: 16px;
 	font-weight: 500;
 	text-decoration: underline solid red;
-	float: right;
+	/* float: right; */
 	
-	
+	display: flex;
 }
 .Testimonials img{
 	display: flex;
 	align-items: start;
 	flex-wrap: wrap;
-	transform: scale(0.7);
+	object-fit: contain;
+	/* width: 500px; */
+	/* transform: scale(0.7); */
 	margin-right:10px;
 	/* margin-top: 30px; */
 	/* display: none; */
+	overflow: hidden;
 }
 .client .client-discription{
 	display: flex;
@@ -275,14 +303,12 @@ body{
 		text-decoration: underline solid red;
 		float: right;
 	}
-	.Testimonials img{
-		transform: scale(1);
-	}
 	.Testimonials{
 		margin-top: 70px;
 		object-fit: cover;
 		/* overflow: hidden; */
 		position: relative;
+		transform: scale(1);
 	}
 	.ride-heading{
 		font-family: 'Manrope', sans-serif;
@@ -370,171 +396,5 @@ body{
 	.content-area {
 		display: flex;
 	}
-	.content-area-nav .form-control{
-		width: 100px;
-		margin-left:40px ;
-	}
-	.content-area-logo .main{
-		display: flex;
-		flex-direction: row;
-		padding-top: 30px;
-		margin-left: 30px;
-		/* flex-wrap: wrap; */
-	}
-	.content-area-about .area-about-img{
-		display: flex;
-		flex-direction: row;
-	}
-	.content-area-about .about-img{
-		transform: scale(1);
-		display: flex;
-		/* align-items: center; */
-		margin-left: 0px;
-		margin-top: 10px;
-	}
-	.content-area-about .about-discription{
-		margin-top: 10px;
-		width: 300px;
-		text-align-last: right;
-	text-transform: capitalize;
-	margin-left: 700px;
-	}
-	.about-img{
-		position: relative;
-	}
-	.img-set-2{
-		position: absolute;
-		
-	}
-	.img-set-3{
-		position: absolute;
-		top:30px;
-		left: 100px;
-	}
-	.content-area-rides{
-		margin-top: 50px;
-	}
-	.content-area-rides .rides-row  {
-	    
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
-	.overlay-text{
-		margin-top: -60%;
-		text-transform: capitalize;
-		text-align: center;
-		color: white;
-		font-family: 'Manrope', sans-serif;
-		size: 16px;
-		font-weight: 500;
-		
-	}
-	.card{
-		margin: 10px;
-		width: 275px;
-		height: 235px;
-	}
-	.Testimonials h2{
-		font-family: 'Manrope', sans-serif;
-		size: 16px;
-		font-weight: 500;
-		text-decoration: underline solid red;
-		float: right;
-	}
-	.Testimonials img{
-		transform: scale(1);
-	}
-	.Testimonials{
-		margin-top: 70px;
-		object-fit: cover;
-		/* overflow: hidden; */
-		position: relative;
-	}
-	.ride-heading{
-		font-family: 'Manrope', sans-serif;
-		text-transform: capitalize;
-	}
-	
-	.img-set-5{
-		position: absolute;
-		bottom: 150px;
-		left: 30px;
-	}
-	.test-para{
-		position: absolute;
-		bottom: 150px;
-		left: 300px;
-		bottom: 45px;
-		width: 425px;
-		background: linear-gradient(to top, #A6011399 0%, red 100%);
-		opacity: 100%;
-		padding: 50px;
-	}
-	.europe{
-		position: absolute;
-		left: 400px;
-		top: 30px;
-		font-size: 110px;
-		font-family: 'PT Serif', serif;
-		color: #C4C4C4;
-	}
-	.client h2{
-		font-family: 'Manrope', sans-serif;
-		size: 16px;
-		font-weight: 500;
-		text-decoration: underline solid red;
-		text-transform: capitalize;
-	}
-	.client{
-		object-fit: cover;
-		overflow: hidden;
-		display: flex;
-	}
-	.client .client-discription img{
-		transform: scale(1);
-	}
-	.client img{
-		transform: scale(1);
-		display: flex;
-	}
-	.footer{
-		background-color: black;
-	}
-	.raj-img{
-		filter: invert(50%);
-		margin-top: 70px;
-		width: 200px;
-		
-	}
-	.raj-footer p{
-		color: white;
-	}
-	.raj-para{
-		text-transform: capitalize;
-		text-align: center;
-		color: white;
-		font-family: 'Manrope', sans-serif;
-		size: 10px;
-		margin-left: 2px;
-	}
-	.nav-footer {
-		margin-left: 70px;
-	}
-	.list{
-		display: flex;
-		justify-content: center;
-	}
-	.list li{
-		color: white;
-	}
-	.Copyright{
-		vertical-align: bottom;
-	}
-	.list-logo li{
-		display: inline;
-		float: right;
-		margin-left: 10px;
-		cursor: pointer;
-	}
+
 }
